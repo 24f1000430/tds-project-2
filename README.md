@@ -22,8 +22,8 @@ FastAPI-based solver that accepts quiz requests, visits JS-rendered quiz pages w
 ## Environment variables
 Set these in your deployment or `.env`:
 - `AIPIPE` - **Required.** The AIPipe endpoint URL or token. Adjust `app/llm.py` if your AIPipe expects different payload shapes.
-- `QUIZ_SECRET` - The secret string you provided on the Google Form (default `SEC437`).
-- `QUIZ_EMAIL` - The email you provided (default `24f1000430@ds.study.iitm.ac.in`).
+- `QUIZ_SECRET` - The secret string you provided on the Google Form.
+- `QUIZ_EMAIL` - The email you provided.
 - `PORT` - Port to run uvicorn on (Hugging Face sets this automatically).
 
 ## Quick local run (development)
