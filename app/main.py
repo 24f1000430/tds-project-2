@@ -13,8 +13,8 @@ load_dotenv()
 app = FastAPI(title="LLM Analysis Quiz Solver")
 
 # Config - read from environment, default to the values you provided
-QUIZ_SECRET = os.environ.get("QUIZ_SECRET", "SEC437")
-QUIZ_EMAIL = os.environ.get("QUIZ_EMAIL", "24f1000430@ds.study.iitm.ac.in")
+QUIZ_SECRET = os.environ.get("QUIZ_SECRET")
+QUIZ_EMAIL = os.environ.get("QUIZ_EMAIL")
 TIMEOUT_SECONDS = int(os.environ.get("SOLVE_TIMEOUT_S", "170"))
   # must finish within 3 minutes (180s) HTTP to allow
 
